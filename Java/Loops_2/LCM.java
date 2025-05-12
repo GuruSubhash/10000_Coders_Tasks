@@ -5,27 +5,23 @@ public class LCM {
         int lcm=greatest;
 
         System.out.println(lcm);
-        while(true){
-            if(lcm%a==0 && lcm %b==0){
-                break;
-            }
-            else{
-                lcm+=greatest;
-            }
-        }
+        while(true)
+            if(lcm%a==0 && lcm %b==0) break;
+            else lcm+=greatest;
+
         return lcm;
     }
     public static int findLCM(int a, int b, int c){
         int greatest;
         if(a>=b && a>=c) greatest=a;
-        else if(b>=a&& b>=c) greatest=b;
+        else if(b>=a && b>=c) greatest=b;
         else greatest =c;
 
         int lcm=greatest;
 
         System.out.println(lcm);
         while(true){
-            if(lcm%a==0 && lcm %b==0 && lcm %c==0){
+            if(lcm%a==0 && lcm %b==0 && lcm %c==0) {
                 break;
             }
             else{

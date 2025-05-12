@@ -5,10 +5,9 @@ public class Frequency {
         for(int i=0; i<arr.length;){
             System.out.print("frequency of : " +(arr[i]));
             int count =1;
-            for(int j=i+1; j<arr.length;++j){
+            for(int j=i+1; j<arr.length;++j)
                 if(arr[i]==arr[j])count++;
                 else break;
-            }
             System.out.println(" is "+count);
             i+=count;
         }

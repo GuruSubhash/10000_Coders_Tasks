@@ -8,5 +8,9 @@ public class Task5 {
     public static void main(String[] args) {
         Consumer<Float> cons= a-> isPositive(a);
         cons.accept(12.6f);
+        int c=3;
+        Function<Integer,Integer> func=a->a+c;
+        System.out.println(func.apply(20));
+        
     }
 }

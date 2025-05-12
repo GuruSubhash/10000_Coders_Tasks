@@ -2,15 +2,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class CopyArrayElements {
-    public static int[] copyArray(int[] args) {
-        return args;
-    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int arr[]= new int[sc.nextInt()];
         for(int i=0; i<arr.length;++i) arr[i]=sc.nextInt();
         System.out.println(Arrays.toString(arr));
-        int copy_arr=copyArray(arr);
+        int[] copy_arr=Arrays.copyOf(arr, arr.length);
         System.out.println(Arrays.toString(copy_arr));
         
         System.out.println(arr);             //different addresses
